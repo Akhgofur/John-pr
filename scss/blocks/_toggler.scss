@@ -1,0 +1,16 @@
+.toggler {
+    width: 30px;
+}
+.toggler__line {
+    transition: all 0.5s;
+    width: 30px;
+    height: 2px;
+    background-color: #21243D;
+    display: block;
+}
+.toggler__top {
+    margin-bottom: 9px;
+}
+.toggler__center {
+    margin-bottom: 9px;
+}

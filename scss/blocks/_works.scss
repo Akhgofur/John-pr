@@ -1,0 +1,18 @@
+.works {
+    padding-top: 15px;
+    padding-bottom: 83px;
+}
+.works__heading {
+    font-weight: 400;
+    font-size: 2.2em;
+    line-height: 60px;
+    margin-bottom: 22px;
+    text-align: left;
+}
+.works__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 31px;
+}

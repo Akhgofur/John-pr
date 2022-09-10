@@ -1,0 +1,31 @@
+.footer {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer__links-list {
+    margin-right: auto;
+    margin-left: auto;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+.footer__link {
+    display: inline-block;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.footer__link-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.footer__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}

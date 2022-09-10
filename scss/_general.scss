@@ -9,6 +9,9 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 body {
@@ -20,9 +23,20 @@ body {
   overflow-x: hidden;
   font-family: "Arial", sans-serif;
   background-color: #fff;
+  color: #21243D;
+  font-size: 10px;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@include breakpoint-down(780px) {
+  body {
+    font-size: 7px;
+  }
 }

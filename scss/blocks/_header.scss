@@ -1,0 +1,45 @@
+.header {
+    padding: 27px 0px;
+    position: relative;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header__nav-toggler {
+    display: none;
+}
+
+.header__checkbox {
+    display: none;
+    &:checked ~ .header__nav {
+        display: block;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    &:checked ~ .toggler {
+        .toggler__top {
+            margin-bottom: 0;
+            transform: rotate(-45deg);
+        }
+        .toggler__center {
+            margin-bottom: 0;
+            display: none;
+        }
+        .toggler__bottom {
+            margin-top: -2px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .header__nav-toggler {
+        display: block;
+    }
+    .header__nav {
+        display: none;
+        right: -100%;
+    }
+}
